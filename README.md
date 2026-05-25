@@ -1,9 +1,44 @@
-# lead-scoring-case
-Lead Scoring case
-Problem Statement
+# Lead Scoring Model — X Education
 
-An education company named X Education sells online courses to industry professionals. On any given day, many professionals who are interested in the courses land on their website and browse for courses. They have process of form filling on their website after which the company that individual as a lead. Once these leads are acquired, employees from the sales team start making calls, writing emails, etc.Through this process, some of the leads get converted while most do not. The typical lead conversion rate at X education is around 30%. Now, this means if, say, they acquire 100 leads in a day, only about 30 of them are converted. To make this process more efficient, the company wishes to identify the most potential leads, also known as Hot Leads.If they successfully identify this set of leads, the lead conversion rate should go up as the sales team will now be focusing more on communicating with the potential leads rather than making calls to everyone
+## Overview
+X Education sells online courses to professionals but converts 
+only ~30% of leads despite significant sales effort. The 
+business goal: identify "hot leads" worth prioritising so the 
+sales team focuses energy where conversion probability is highest.
 
-Business Objective
+Target set by CEO: lift conversion rate from 30% to 80%.
 
-Lead X wants us to build a model to give every lead a lead score between 0 -100 . So that they can identify the Hot leads and increase their conversion rate as well. The CEO want to achieve a lead conversion rate of 80%. They want the model to be able to handle future constraints as well like Peak time actions required, how to utilize full man power and after achieving target what should be the approaches.
+## Approach
+- Cleaned and preprocessed lead-level data including source, 
+  activity, and demographic variables
+- Exploratory analysis to identify conversion patterns by 
+  lead source, engagement behaviour, and profile
+- Built a logistic regression model to score each lead 
+  between 0-100
+- Validated model against the 80% conversion rate target
+
+## Key Findings
+- Lead source and website engagement time were strongest 
+  predictors of conversion
+- Leads from certain referral sources converted at 
+  significantly higher rates than organic/direct traffic
+- Sales team was spending disproportionate time on 
+  low-probability leads — model enables prioritisation
+
+## Output
+Every lead receives a score from 0-100. Leads above a defined 
+threshold are flagged as hot leads for immediate sales follow-up, 
+enabling the team to concentrate effort on the highest-probability 
+conversions.
+
+## Business Impact
+Implementing score-based prioritisation projected to lift 
+conversion rates toward the 80% CEO target by eliminating 
+low-value outreach and focusing sales capacity on warm leads.
+
+## Tools
+Python, pandas, scikit-learn, logistic regression, 
+matplotlib, seaborn
+
+## Team
+Group project — Sukanya Nambiar
